@@ -1,0 +1,35 @@
+#Objective: 
+#Dataset: Input Data (100 TB)	=>	128 MB Blocks
+
+***********************************************
+Input Data
+
+
+***********************************************
+Input to Mapper
+
+key	value
+
+..
+***********************************************
+Processing (map) (custom business logic)
+
+
+***********************************************
+Output from the mapper (write to local disk)
+
+key		value
+
+***********************************************
+Input to reducer (All the values corresponding to same key goes to same reducer)
+
+key		values
+
+***********************************************
+Processing in reducer (custom business logic)
+
+
+***********************************************
+Output from the reducer (Final output)
+
+key		value
